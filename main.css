@@ -20,6 +20,14 @@ a:focus, a:hover {
 body {
 	font-family: 'Noto Serif', serif;
 	font-size: 18px;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	grid-template-rows: 100px 1fr 80px;
+	grid-gap: 1px;
+	grid-template-areas: 
+		" head head head "
+		" nav main sidebar "
+		" footer footer footer ";
 }
 
 h1, h2 {
@@ -39,15 +47,28 @@ h2 {
 
 header {
 	text-align: center;
+	grid-area: head;
 }
 
 main {
-
+	grid-area: main;
 }
 
 p {
 	line-height: 140%;
 	margin-bottom: 1em;
+}
+
+nav {
+	grid-area: nav;
+}
+
+aside {
+	grid-area: sidebar;
+}
+
+footer {
+	grid-area: footer;
 }
 
 #intro {
