@@ -54,18 +54,6 @@ p {
 	font-size: 22px;
 }
 
-#automotive, #maritime, #medical, #physics, #myths {
-
-}
-
-#footer-container {
-	
-}
-
-#header-container {
-
-}
-
 #main-container {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
